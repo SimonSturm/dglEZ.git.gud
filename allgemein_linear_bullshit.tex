@@ -1,0 +1,38 @@
+\section{Allgemeine L\"osung Lineare DGL 1. Ordnung}
+
+\begin{equation*}
+    y'+p(x)\cdot y = r(x)
+\end{equation*}
+
+
+\subsection{Falls r(x) = 0}
+
+\begin{align*}
+    y' + p(x)\cdot y            &= 0                  \\
+    \frac{dy}{dx} + p(x)\cdot y &= 0                  \\
+    \int\frac{dy}{y}            &= -\int p(x)dx       ,\hspace{8mm}y \neq 0 \\
+    ln\lvert y\lvert            &= -\int p(x)dx + c   \\
+\end{align*}
+
+\begin{equation*}[box=\widebox]
+    y(x) = Ke^{-\int p(x)dx}       \hspace{8mm} K\in{\rm I\!R}
+\end{equation*}
+
+\subsection{Falls r(x) != 0}
+
+$y' + p(x) \cdot y = r(x) \rightarrow$ Verfahren ``Variation der Konstanten'':
+\begin{align*}
+    y_p(x)             &= K(x)e^{-\int p(x)dx} \\
+    y_p'(x)            &= K'(x)e^{-\int p(x)dx} - K(x)p(x)e^{-\int{p(x)dx}} \\
+                       &\rightarrow r(x) = y' + p(x) \cdot y \\
+    r(x)               &= K'(x)e^{-\int p(x)dx} - K(x)p(x) - K(x)p(x)e^{-\int p(x)dx} + p(x)K(x)e^{-\int p(x)dx} \\
+    r(x)               &= K'(x)e^{-\int p(x)dx} \\
+    K'(x)              &= r(x)e^{\int p(x)dx} \\
+    K(x)               &= \int r(x)e^{\int p(x)dx} \\
+    \Rightarrow y_p(x) &= K(x)e^{-\int p(x)dx} = \left(\int r(x)e^{\int p(x)dx}\right) \cdot e^{-\int p(x)dx} \\
+\end{align*}
+
+\begin{equation*}[box=\widebox]
+    y(x) = C \cdot e^{-\int p(x)dx} + e^{-\int p(x)dx} \int r(x)e^{\int p(x)dx}dx
+\end{equation*}
+
