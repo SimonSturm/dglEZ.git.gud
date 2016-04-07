@@ -7,53 +7,12 @@
 
 \begin{document}
 
-%\section{Eulerverfahren}
-%\[
-%y' = f(x,y)
-%
-%h = \frac{1}{n}
-%
-%\]
-
-\section{Differentialgleichung 1. Ordnung}
-
 \subsection{Random Shit}
 \input{dumpfige_memes.tex}
 
-\subsection{Separabel}
-\begin{align*}[box=\widebox]
-y' &= \frac{d y}{d x} \\
-&= f(x)\cdot g(y)\\\\
-\Rightarrow \frac{d y}{g(y)} &= f(x)d x\\
-\int{\frac{d y}{g(y)}} &= \int{f(x)d x}\\
-F_{1}(y) &= F_{2}(x)+C \qquad C\Rightarrow y(x_{0}) = y_{0}
-\end{align*}
 
-\subsection{Substitution}
-
-\begin{center}
-\begin{align*}[box=\widebox]
-y' &= f(ax+by+c) \\
-&\downarrow \\
-y &= \frac{u-a-c}{b}
-\end{align*}
-\end{center}
-
-\begin{center}
-\begin{align*}[box=\widebox]
-y' &= f\left(\frac{y}{x}\right) \rightarrow u(x)=\frac{y}{x}\\
-&\downarrow \\
-y &= u(x)\cdot x
-\end{align*}
-\end{center}
-
-\begin{center}
-\begin{align*}[box=\widebox]
-0 &= y + p(x)\cdot y \\
-&\downarrow \\
-y &= K\cdot e^{\int p(x)dx}
-\end{align*}
-\end{center}
+\input{Separabel.tex}
+\input{Integration_Substitution.tex}
 
 \end{document}
 
