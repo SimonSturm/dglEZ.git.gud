@@ -1,9 +1,14 @@
 \section{Substitution}
 
 \begin{center}
-\begin{align*}[box=\widebox]
+\begin{align*}
 y' &= f(ax+by+c) \\
-&\downarrow \\
+&\Downarrow \\
+u &= u(x) = ax +by +c\\
+\frac{du}{dx} &= a + b\frac{dy}{dx}\\
+\frac{du}{dx} &= a +b\cdot u\\
+\frac{du}{a+b\cdot u} &= dx\\
+&\Downarrow \text{Variablentrennung}\\
 y &= \frac{u-a-c}{b}
 \end{align*}
 \end{center}
