@@ -13,5 +13,9 @@
 *.run.xml
 *.toc
 *.pdf
+*.synctex
+*.gz
+
 !fhnwlogo.pdf
 !fhnwreport.pdf
+!./*/graphics/*
