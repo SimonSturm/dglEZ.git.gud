@@ -15,6 +15,7 @@
 *.pdf
 *.synctex
 *.gz
+*.swp
 
 !fhnwlogo.pdf
 !fhnwreport.pdf
