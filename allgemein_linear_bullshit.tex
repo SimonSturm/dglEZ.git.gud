@@ -1,11 +1,15 @@
 \section{Allgemeine L\"osung Lineare DGL 1. Ordnung}
 
-\begin{equation*}
-    y'+p(x)\cdot y = r(x)
-\end{equation*}
+Eine Differentialgleichung ist linear, wenn sie in der folgenden Form dargestellt werden kann:
 
+\begin{align*}
+    y'+p(x)\cdot y = r(x)\begin{cases}
+r(x) = 0 \qquad\text{homogene lineare DGL 1.Ordnung}\\
+r(x) \neq 0 \qquad \text{inhomogene lineare DGL 1.Ordnung}
+\end{cases}
+\end{align*}
 
-\subsection{Falls r(x) = 0}
+\subsection{homogene lineare DGL 1.Ordnung}
 
 \begin{align*}
     y' + p(x)\cdot y            &= 0                  \\
@@ -18,7 +22,7 @@
     y(x) = Ke^{-\int p(x)dx}       \hspace{8mm} K\in{\rm I\!R}
 \end{equation*}
 
-\subsection{Falls r(x) != 0}
+\subsection{inhomogene lineare DGL 1.Ordnung}
 
 $y' + p(x) \cdot y = r(x) \rightarrow$ Verfahren ``Variation der Konstanten'':
 \begin{align*}
