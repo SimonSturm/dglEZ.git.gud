@@ -14,17 +14,13 @@ y &= \frac{u-a-c}{b}
 \end{center}
 
 \begin{center}
-\begin{align*}[box=\widebox]
-y' &= f\left(\frac{y}{x}\right) \rightarrow u(x)=\frac{y}{x}\\
-&\downarrow \\
+\begin{align*}
+y' &= f\left(\frac{y}{x}\right)\Rightarrow u =\frac{y}{x}\\
+y &= u\cdot x\\
+y' &= u'\cdot x + u \Rightarrow f(u) = u'\cdot x +u\\
+\frac{du}{dx} &= \frac{f(u)-u}{x}\\
+&\Downarrow \text{Variablentrennung}\\
+u &= u(x) \Rightarrow u = \frac{y}{x}\\
 y &= u(x)\cdot x
-\end{align*}
-\end{center}
-
-\begin{center}
-\begin{align*}[box=\widebox]
-0 &= y + p(x)\cdot y \\
-&\downarrow \\
-y &= K\cdot e^{\int p(x)dx}
 \end{align*}
 \end{center}
