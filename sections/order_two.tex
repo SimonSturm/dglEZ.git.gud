@@ -1,0 +1,31 @@
+\section{DGL 2. Ordnung}
+\subsection{homogen}
+
+\begin{align*}
+&y'' + ay' +by = 0\\
+&\Rightarrow \lambda^2 +a\lambda+b=0 \\
+&D =  a^2-4b
+\end{align*}
+
+
+\begin{align*}
+\text{Fall $D>$ 0:\qquad}\lambda_{1,2} &= \frac{-a\pm\sqrt{a^2-4b}}{2}\\
+y(x) &= C_{1}e^{\lambda_{1}x}+C_{2}e^{\lambda_{2}x}
+\end{align*}
+
+\begin{align*}
+\text{Fall $D=$ 0:\qquad}\lambda_{0} &= -\frac{a}{2}\\
+y(x) &= C_{1}e^{\lambda_{0}x}+xC_{2}e^{\lambda_{0}x}
+\end{align*}
+
+\begin{align*}
+\text{Fall $D<$ 0:\qquad}\lambda_{1,2} &= -\frac{a}{2}\pm \frac{j\sqrt{4b-a^2}}{2}
+=\alpha\pm j\beta
+\begin{cases}
+\alpha = -\frac{a}{2}\\
+\beta = \frac{\sqrt{4b-a^2}}{2}
+\end{cases}\\
+y(x) &= e^{\alpha x}\left[k_{1}\cos(\beta x)+k_{2}\sin(\beta x)\right]
+\end{align*}
+
+
