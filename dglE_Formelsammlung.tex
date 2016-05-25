@@ -1,6 +1,8 @@
 \documentclass[a4paper]{fhnwreport} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
 
 \usepackage[overload]{empheq}
+\usepackage{pdfpages}
+
 \newcommand*{\widebox}[2][0.5em]{\fbox{\hspace{#1}$\displaystyle #2$\hspace{#1}}}
 \title{Formelsammlung dglE}
 \author{The Procrastinators}
@@ -18,4 +20,5 @@
 \input{./sections/allgemein_linear_bullshit.tex}
 \input{./sections/Bernoullische_DGL.tex}
 \input{./sections/order_two.tex}
+%\includepdf[pages=-]{./sections/dglE_inhomogen.pdf}
 \end{document}
