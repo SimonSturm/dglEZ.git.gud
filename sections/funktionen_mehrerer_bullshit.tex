@@ -1,0 +1,49 @@
+\section{Funktionen mehrerer Variablen}
+
+\subsection{Matlab}
+
+This shit will plot a function with mehrere Variables.
+\lstinputlisting{meshgrid.m}
+
+Niveaulinien plotten:
+\lstinputlisting{niveaulinien.m}
+
+
+\subsection{Ebene}
+
+Eine Ebene kann mit der folgenden allgemeinen Gleichung beschrieben werden.
+\begin{equation*}
+    ax + by + cz + d = 0
+\end{equation*}
+
+Die r\"aumliche Lage einer Ebene mit der allgemeinen  Funktionsgleichung l\"asst
+sich aus ihren Schnittpunkten $S_x$, $S_y$, $S_z$ mit den drei Koordinatenachsen
+bestimmen.
+
+\begin{align*}
+    S_x &= \left(-\frac{d}{a}, 0, 0\right) &
+    S_y &= \left(0, -\frac{d}{b}, 0\right) &
+    S_z &= \left(0, 0, -\frac{d}{c}\right) \\
+\end{align*}
+
+
+\subsection{Grenzwert}
+
+Beispiel:
+\begin{align*}
+    f(x,y) &= \frac{xy}{x^2+ y^2} & \\
+    \lim_{(x_0,y_0) \to (0,0)} f(x,y) &= \lim_{x \to 0} f(x,mx) \\
+    &= \frac{m}{1+m^2} \\
+\end{align*}
+
+
+\subsection{Polarkoordinaten}
+
+\begin{align*}
+    x &= r \cos \theta \\
+    y &= r \sin \theta \\
+    f(x,y) &= \frac{xy^2}{x^2 + y^4} \\
+    \lim_{(x,y) \to (0,0)} \frac{xy^2}{x^2 + y^4} &= \lim_{r \to 0} \frac{r\cos\theta\sin^2\theta}{\cos^2(\theta) + r^2\sin^4(\theta)} \\
+\end{align*}
+
+
