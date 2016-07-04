@@ -21,33 +21,18 @@
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{fhnwreport}[2013/02/14 v1.0 PDF-LaTeX class for FHNW reports]
+\ProvidesClass{fhnwreport/fhnwreport}[2013/10/07 v2.0 PDF-LaTeX class for FHNW reports]
 \LoadClass{article}
 \RequirePackage{geometry}
 \RequirePackage{calc}
 \RequirePackage{times}
 \RequirePackage{graphicx}
-\usepackage[german]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage[babel, german=quotes]{csquotes}
-\usepackage{hyperref}
-\usepackage{verbatim}
-\usepackage{amsmath}		%Mathe-Package
-\usepackage{amsthm}			%Mathe-Package
-\usepackage{graphicx} 	%Paket für die Darstellung von Abbildungen
-
-%-----------------------------(Optionale) Pakete
-\usepackage{subfigure}	%Paket für die Darstellung zweier Abbildungen über oder nebeneinander
-\usepackage{booktabs}		%Paket für professionelle Tabellen
-\usepackage{todonotes}	%Paket für die Nutzung von Randnotitzen. 
-\usepackage{cite}	
-\bibliographystyle{IEEEtran}
 \geometry{a4paper,twoside=false}
 \geometry{width=160mm,height=241mm,top=32mm,outer=25mm}
 \geometry{footskip=19mm,headsep=13mm}
-\geometry{twoside=false}	% Für den einseitgen Druck. Falls doppelseitig gewünscht: Befehl löschen
+\geometry{twoside=false}    % Für den einseitgen Druck. Falls doppelseitig gewünscht: Befehl löschen
 \overfullrule=1em
-%%%% \newcommand{\CaptionFont}{\em}
+%\newcommand{\CaptionFont}{\em}
 \newcommand{\SecFont}{\sf\bfseries}
 \newcommand{\SecNumFont}{\sf\bfseries}
 \newcommand{\ChapFont}{\sf\bfseries}
@@ -73,7 +58,7 @@
       \fi
     \else
       \newpage
-      \global\@topnum\z@   % Prevents figures from going at top of page.
+      \global\@topnum\z@   % Prevents figures from going at top of the title page.
       \@maketitle
     \fi
     \thispagestyle{empty}\@thanks
@@ -97,7 +82,7 @@
   \setlength{\unitlength}{1cm}%
   \begin{picture}(0,0)
     \linethickness{0.025mm}
-    \put(-0.85,2.2){\mbox{\includegraphics[height=12mm]{fhnwlogo.pdf}}}
+    \put(-0.85,2.2){\mbox{\includegraphics[height=12mm]{fhnwreport/fhnwlogo.pdf}}}
   \end{picture}
   \par%
   \vskip 2em%
@@ -224,13 +209,10 @@
 \def\@seccntformat#1{\csname the#1\endcsname\quad}
 \RequirePackage{hyperref,color}
 \hypersetup{bookmarksnumbered={true},colorlinks={true},linkcolor=black,citecolor=black}
-%%%%
 \RequirePackage{caption}
 \captionsetup{margin=10pt,font=small,labelfont=bf}
-%%%% adapted from size12.clo
 \setlength\floatsep    {24\p@ \@plus 2\p@ \@minus 4\p@}
 \setlength\textfloatsep{30\p@ \@plus 2\p@ \@minus 4\p@}
-%%%%
 \endinput
 %%
 %% End of file `fhnwreport.cls'.

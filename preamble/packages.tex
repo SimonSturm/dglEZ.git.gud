@@ -1,0 +1,47 @@
+\documentclass[a4paper]{fhnwreport/fhnwreport} %Legt grundlegende Formatierungen wie Schriftarten, Ort Seitenzahlen etc. fest.
+\graphicspath{{./graphics/}}%Change according to graphics folder!
+
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{amsmath}        %Mathe-Package
+\usepackage{amsthm}         %Mathe-Package
+\usepackage{graphicx}   %Paket für die Darstellung von Abbildungen
+\usepackage{subfigure}  %Paket für die Darstellung zweier Abbildungen über oder nebeneinander
+\usepackage{booktabs}       %Paket für professionelle Tabellen
+\usepackage{todonotes}  %Paket für die Nutzung von Randnotitzen. 
+\usepackage{cite}
+\bibliographystyle{IEEEtran}
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+
+\usepackage[overload]{empheq}
+\usepackage{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{amssymb}
+
+\newcommand*{\widebox}[2][0.5em]{\fbox{\hspace{#1}$\displaystyle #2$\hspace{#1}}}
+
+ \lstset{language=Matlab,%
+ 	%basicstyle=\color{red},
+ 	breaklines=true,%
+ 	morekeywords={matlab2tikz},
+ 	keywordstyle=\color{blue},%
+ 	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+ 	identifierstyle=\color{black},%
+ 	stringstyle=\color{matlab-string-color},
+ 	commentstyle=\color{matlab-comments-color},%
+ 	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+ 	numbers=left,%
+ 	numberstyle={\tiny \color{black}},% size of the numbers
+ 	numbersep=9pt, % this defines how far the numbers are from the text
+ 	emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+ 	%emph=[2]{word1,word2}, emphstyle=[2]{style},   
+ }
+
+ \definecolor{matlab-comments-color}{RGB}{28,172,0} % color values Red, Green, Blue
+ \definecolor{matlab-string-color}{RGB}{170,55,241}
