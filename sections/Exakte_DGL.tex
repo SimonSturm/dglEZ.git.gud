@@ -1,0 +1,25 @@
+\section{DGL mehrere Variablen}
+
+\begin{align*}
+y' = \frac{g(x,y)}{h(x,y)} \quad\rightarrow\quad g(x,y)dx &+ h(x,y)dy = 0\\
+\frac{\partial g(x,y)}{\partial y} &= \frac{\partial h(x,y)}{\partial x}\quad\text{exakte DGL}\\
+\frac{\partial g(x,y)}{\partial y} &\neq \frac{\partial h(x,y)}{\partial x}\quad\text{nicht exakte DGL}
+\end{align*}
+
+\subsection{exakte DGL}
+
+\begin{align*}
+	u(x,y) &= \int g(x,y)dx + \int\left[h(x,y)-\int\frac{\partial g}{\partial y}dx\right]dy = C\\
+	u(x,y) &\text{ ist die Lösung der exakten Differentialgleichung}
+\end{align*}
+
+\subsection{nicht exakte DGL}
+
+\begin{align*}
+\rightarrow&\text{mit Funktion $\alpha(x,y)$ erweitern}\\
+\frac{\partial}{\partial y}\left(\alpha(x,y)g(x,y)\right) &= \frac{\partial}{\partial x}\left(\alpha(x,y)h(x,y)\right)\\
+u(x,y) &= \int g^{*}(x,y)dx + \int\left[h^{*}(x,y)-\int\frac{\partial g^{*}(x,y)}{\partial y}dx\right]dy = C\\
+u(x,y) &\text{ ist die Lösung der exakten Differentialgleichung}
+\end{align*}
+
+
